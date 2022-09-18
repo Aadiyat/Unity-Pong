@@ -7,11 +7,20 @@ public class LaunchBallAtGameStart : MonoBehaviour
 {   
     private static  readonly System.Random random = new System.Random();
     public float speed;
+
+    private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+
+        LaunchBall();
+    }
+
+    private void LaunchBall()
+    {
         float launchAngleInDegrees = RandomMirroredAngle(-45.0f, 45.0f);
-        Vector3 launchDirection = PolarCoordinatesToRectangular(1.0f, launchAngleInDegrees*(float)Math.PI/180.0f);
+        Vector3 launchDirection = PolarCoordinatesToRectangular(1.0f, launchAngleInDegrees * (float)Math.PI / 180.0f);
         Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
         rigidbody.velocity = launchDirection * speed;
     }
@@ -19,7 +28,7 @@ public class LaunchBallAtGameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        
     }
 
     float RandomMirroredAngle(float minRange, float maxRange){
