@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6119079743730887226}
   m_Layer: 0
   m_Name: Goalpost
-  m_TagString: Untagged
+  m_TagString: goalpost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
