@@ -17,18 +17,11 @@ public class PaddleVerticalMovement : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    public void updatePosition(Vector2 movementDirection)
     {
-        updatePosition();
-    }
-
-    private void updatePosition()
-    {
-        Vector2 movementDirecton = new Vector2(0, Input.GetAxis("Vertical"));
-        bool willCollide = checkCollisions(movementDirecton);
+        bool willCollide = checkCollisions(movementDirection);
         Debug.Log(willCollide);
-        if(!willCollide) rigidBody.MovePosition(rigidBody.position + movementDirecton * moveSpeed * Time.deltaTime);
+        if(!willCollide) rigidBody.MovePosition(rigidBody.position + movementDirection * moveSpeed * Time.deltaTime);
     }
 
     private bool checkCollisions(Vector2 movementDirection){
