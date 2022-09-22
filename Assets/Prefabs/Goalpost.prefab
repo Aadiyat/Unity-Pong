@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5780499333245761589}
   - component: {fileID: 6119079743730887226}
   m_Layer: 0
-  m_Name: VerticalBoundary
+  m_Name: Goalpost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
