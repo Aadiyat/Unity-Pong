@@ -22,6 +22,7 @@ public class UpdateScore : MonoBehaviour
             if(contactObject.tag == "goalpost"){
                 contactObject.GetComponentInParent<PlayerScore>().incrementScore();
                 Debug.Log(contactObject.GetComponentInParent<PlayerScore>().getScore());
+                break;
             }
         }
     }

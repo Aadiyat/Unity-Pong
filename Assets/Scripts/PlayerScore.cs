@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
-    // Start is called before the first frame update
     private int score = 0;
 
     public void incrementScore(){
