@@ -20,7 +20,6 @@ public class PaddleVerticalMovement : MonoBehaviour
     public void updatePosition(Vector2 movementDirection)
     {
         bool willCollide = checkCollisions(movementDirection);
-        Debug.Log(willCollide);
         if(!willCollide) rigidBody.MovePosition(rigidBody.position + movementDirection * moveSpeed * Time.deltaTime);
     }
 
