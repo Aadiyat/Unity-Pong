@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2189292907935719741, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_Name
-      value: Player (1)
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 3199265932995138105, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_Color.b
@@ -341,6 +341,10 @@ PrefabInstance:
     - target: {fileID: 3199265932995138105, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_Color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544341502199624535, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
+      propertyPath: inputAxisName
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 5011345602838725263, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -462,7 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2189292907935719741, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544341502199624535, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
+      propertyPath: inputAxisName
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 5011345602838725263, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,7 +484,8 @@ PrefabInstance:
       propertyPath: inputAxisName
       value: Player1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8050378073978625804, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f1e7d5e29915fa4d8d6bf318a0de51d, type: 3}
 --- !u!1001 &1893939154
 PrefabInstance:

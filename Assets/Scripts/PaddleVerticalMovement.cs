@@ -6,7 +6,7 @@ public class PaddleVerticalMovement : MonoBehaviour
 {
     public float moveSpeed = 10.0f;
     public ContactFilter2D movementFilter;
-
+    public string inputAxisName;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private Rigidbody2D rigidBody;
     private float collisionOffset = 0.05f;
@@ -17,8 +17,13 @@ public class PaddleVerticalMovement : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    public void updatePosition(Vector2 movementDirection)
+    public void FixedUpdate(){
+        updatePosition();
+    }
+
+    public void updatePosition()
     {
+        Vector2 movementDirection = new Vector2(0, Input.GetAxis(inputAxisName)); 
         bool willCollide = checkCollisions(movementDirection);
         if(!willCollide) rigidBody.MovePosition(rigidBody.position + movementDirection * moveSpeed * Time.deltaTime);
     }
